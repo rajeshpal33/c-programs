@@ -8,7 +8,7 @@ typedef struct student_management{
 
 int main(){
 
-	int choice, i;
+	int n, i;
 	printf("How many students : ");
 	scanf("%d", &n);
 
