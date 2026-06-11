@@ -1,37 +1,36 @@
 #include<stdio.h>
 
-typedef struct student_management{
+struct student{
 	int roll;
 	char name[50];
 	float marks;
-}student;
+}
 
 int main(){
-
-	int n, i;
-	printf("How many students : ");
+	int i,n;
+	printf("How many students: ");
 	scanf("%d", &n);
 
-	student s[n];
+	struct student s[n];
 	for(int i=0;i<n;i++){
-		printf("Enter Roll No. :");
+		printf("Enter Roll no.: ");
 		scanf("%d", &s[i].roll);
 
-		printf("Enter Name : ");
+		printf("Enter Name: ");
 		scanf("%s", s[i].name);
 
-		printf("Enter Marks : ");
-		scanf("%f", &s[i].marks);
+		printf("Enter Marks: ");
+		scanf("%f", &marks);
 }
 
+
+	printf("\n--------STUDENT DETAILS--------");
 	for(int i=0;i<n;i++){
-		printf("\n------STUDENT DETAILS------");
-		printf("\n");
-		printf("\nRoll Number : %d\n", s[i].roll);
-		printf("\nName : %s\n", s[i].name);
-		printf("\nMarks : %.2f\n", s[i].marks);
-
-		return 0;
+		printf("Student %d\n", i+1);
+		printf("Roll No.: %d\n", s[i].roll);
+		printf("Name: %s\n", s[i].name);
+		printf("Marks: %f\n", s[i].marks);
+}
+return 0;
 }
 
-}
