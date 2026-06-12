@@ -28,3 +28,20 @@ Here is a catalog of all the programs I have developed so far:
 **Rajesh Kumar**
 *Aspiring Software Developer | BCA Student*
 
+
+### 2. 📋 Advanced Student Management System (SMS)
+* **File:** `student_management.c`
+* **Description:** A full-featured, console-based CRUD application in C that manages student records with persistent file storage. Data remains saved even after closing the program.
+
+* **Key Features Implemented:**
+  - **Full CRUD Operations:** Add, View, Search, Update, and Delete student records smoothly.
+  - **File Persistence (Data Storage):** Uses Binary File Handling (`fwrite` and `fread`) to save/load data directly into a `students.data` file.
+  - **Array Shifting Logic:** Implements custom algorithm to delete records by shifting structural elements inside the array.
+  - **Robust Input Handling:** Uses `scanf(" %[^\n]s")` to allow entering full names with spaces without crashing the buffer.
+  - **Modular Architecture:** Well-structured code written using clean, dedicated functions for each feature.
+
+* **Tech Stack & Concepts Used:**
+  - **Language:** C (Structures, Pointers, Arrays, File I/O)
+  - **Compiler:** Clang / GCC
+  - **Environment:** Termux (Android)
+
