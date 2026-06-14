@@ -8,7 +8,8 @@ int main(){
     int number, guess, attempts, maxattempts;
     int choice, score=0;
     int range;
-    
+    int playAgain;
+
     srand(time(0));
     
     do{
@@ -68,19 +69,19 @@ int main(){
         
         if(guess != number){
             printf("Game Over ❌ \n The number was %d\n", number);
-            printf("your score = %d", score);
-            
-            printf("\nPlay again ? / (1=Yes/ 0=No)\n ");
-            
-            printf("Enter your choice -->\n");
-            scanf("%d", &choice);
-            
         }
-    }while(choice == 1);
+        printf("your score = %d", score);
+
+
+        printf("\nPlay again ? / (1=Yes/ 0=No)\n ");
+        printf("Enter your choice -->\n");
+        scanf("%d", &playAgain);
+
+    }while(playAgain == 1);
         
         printf("Final score: %d\n", score);
         printf("Thanks for Playing 🥸");
     
 
     return 0;
-
+}
